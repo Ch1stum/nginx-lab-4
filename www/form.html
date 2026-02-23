@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master-class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="Master-class" action = "process.php" method = "POST">
+        <input type="text" name="username" placeholder="Введите имя">
+        <input type="text" name="userage" placeholder="Введите возраст">
+        <input type="email" name="email" placeholder="Введите email">
+        <select name="theme">
+            <option value="">Выберите тему</option>
+            <option value="clay">Глиняные горшки</option>
+            <option value="drawing">Рисование</option>
+            <option value="dance">Танцы</option>
+        </select>
+        <label>
+            <input type="checkbox" name="materials"> Материалы включены
+        </label>
+        <label>
+            <input type="radio" name="format" value="online"> Онлайн
+        </label>
+        <label>
+            <input type="radio" name="format" value="offline"> Очно
+        </label>
+        <input type="date" name="date">
+        <button type="submit">Отправить</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <script>
+        document.getElementById("Master-class").addEventListener("submit", function(e){
+            const username = document.querySelector("[name='username']").value;
+            alert("Вы ввели имя: " + username);
+        });
+    </script>
+</body>
+</html>
