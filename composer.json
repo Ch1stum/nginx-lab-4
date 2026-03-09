@@ -1,0 +1,12 @@
+{
+    "name": "user/nginx-lab-4",
+    "authors": [
+        {
+            "name": "Ch1stum",
+            "email": "aresteam39@mail.ru"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
