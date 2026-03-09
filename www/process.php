@@ -33,3 +33,11 @@ file_put_contents("data.txt", $line, FILE_APPEND);
 
 header("Location: index.php");
 exit();
+
+require_once 'ApiClient.php';
+$api = new ApiClient();
+
+$url = ' https://api.artic.edu/api/v1/artworks';
+$apiData = $api->request($url);
+
+$_SESSION['api_data'] = $apiData;
